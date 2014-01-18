@@ -2,11 +2,15 @@
 Changelog for package roswtf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.9.51 (2013-12-28)
+1.9.53 (2014-01-14)
 -------------------
-* fix some unit tests
-* roswtf: do not warn about not existing stacks in a catkin workspace
-* Contributors: Dirk Thomas
+
+1.9.52 (2014-01-08)
+-------------------
+
+1.9.51 (2014-01-07)
+-------------------
+* do not warn about not existing stacks folder in a catkin workspace
 
 1.9.50 (2013-10-04)
 -------------------
