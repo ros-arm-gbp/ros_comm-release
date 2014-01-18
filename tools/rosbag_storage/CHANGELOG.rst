@@ -2,10 +2,12 @@
 Changelog for package rosbag_storage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.9.51 (2013-12-28)
+1.9.53 (2014-01-14)
 -------------------
-* rosbag_storage: fix missing console_bridge include directory
-* add missing version dependency on roscpp_core stuff (`#299 <https://github.com/trainman419/ros_comm/issues/299>`_)
-* update code after refactoring into rosbag_storage and roscpp_core (`#299 <https://github.com/trainman419/ros_comm/issues/299>`_)
-* move several client library independent parts from ros_comm into roscpp_core, split rosbag storage specific stuff from client library usage (`#299 <https://github.com/trainman419/ros_comm/issues/299>`_)
-* Contributors: Dirk Thomas
+
+1.9.52 (2014-01-08)
+-------------------
+
+1.9.51 (2014-01-07)
+-------------------
+* move several client library independent parts from ros_comm into roscpp_core, split rosbag storage specific stuff from client library usage (`#299 <https://github.com/ros/ros_comm/issues/299>`_)
