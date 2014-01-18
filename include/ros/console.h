@@ -32,12 +32,18 @@
 #ifndef ROSCONSOLE_ROSCONSOLE_H
 #define ROSCONSOLE_ROSCONSOLE_H
 
+#include "console_backend.h"
+
 #include <cstdio>
 #include <sstream>
 #include <ros/time.h>
 #include <cstdarg>
 #include <ros/macros.h>
 #include <map>
+
+#ifdef ROSCONSOLE_BACKEND_LOG4CXX
+#include "log4cxx/level.h"
+#endif
 
 // Import/export for windows dll's and visibility for gcc shared libraries.
 
@@ -73,20 +79,9 @@ namespace console
 
 ROSCONSOLE_DECL void shutdown();
 
-namespace levels
-{
-enum Level
-{
-  Debug,
-  Info,
-  Warn,
-  Error,
-  Fatal,
-
-  Count
-};
-}
-typedef levels::Level Level;
+#ifdef ROSCONSOLE_BACKEND_LOG4CXX
+extern ROSCONSOLE_DECL log4cxx::LevelPtr g_level_lookup[];
+#endif
 
 extern ROSCONSOLE_DECL bool get_loggers(std::map<std::string, levels::Level>& loggers);
 extern ROSCONSOLE_DECL bool set_logger_level(const std::string& name, levels::Level level);
