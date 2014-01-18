@@ -2,14 +2,17 @@
 Changelog for package message_filters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.9.51 (2013-12-28)
+1.9.53 (2014-01-14)
 -------------------
-* Fix changelog formatting.
-* Fix segmentation fault on OS X 10.9 (clang / libc++)
-  Accessing front() of an empty std::deque is undefined behavior.
-  With gcc/libstdc++ it seems fine, on clang / libc++ it causes a segmentation fault.
-* update code after refactoring into rosbag_storage and roscpp_core (`#299 <https://github.com/trainman419/ros_comm/issues/299>`_)
-* Contributors: Dirk Thomas, Nikolaus Demmel, trainman419
+* add kwargs for message_filters.Subscriber
+
+1.9.52 (2014-01-08)
+-------------------
+
+1.9.51 (2014-01-07)
+-------------------
+* update code after refactoring into rosbag_storage and roscpp_core (`#299 <https://github.com/ros/ros_comm/issues/299>`_)
+* fix segmentation fault on OS X 10.9 (clang / libc++)
 
 1.9.50 (2013-10-04)
 -------------------
@@ -29,7 +32,7 @@ Changelog for package message_filters
 
 1.9.45 (2013-06-06)
 -------------------
-* fix template syntax for ``signal_.template`` addCallback() to work with Intel compiler
+* fix template syntax for signal_.template addCallback() to work with Intel compiler
 
 1.9.44 (2013-03-21)
 -------------------
